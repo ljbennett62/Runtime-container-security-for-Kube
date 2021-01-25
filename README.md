@@ -1,15 +1,13 @@
 # Complete run-time container security for production Kubernetes workloads
 
 
+This tutorial demonstrates how NeuVector integrates with IBM Cloud Container Service to provide complete run-time container security for your production Kubernetes workloads. We are excited to partner together to demonstrate how quickly and easily users can deploy a Kubernetes cluster in IBM Cloud and then secure those workloads in this new and ever-changing container and microservice world.
+
 ## Why container security is critical
 
 xxxxxxxxx
 xxxxxxx
 xxxx
-
-
-###
-We will discuss how NeuVector integrates with IBM Cloud Container Service to provide complete run-time container security for your production Kubernetes workloads. We are excited to partner together to demonstrate how quickly and easily users can deploy a Kubernetes cluster in IBM Cloud and then secure those workloads in this new and ever-changing container and microservice world.
 
 ## About IBM Cloud
 
