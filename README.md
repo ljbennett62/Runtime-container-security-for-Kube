@@ -11,17 +11,17 @@ xxxx
 ###
 We will discuss how NeuVector integrates with IBM Cloud Container Service to provide complete run-time container security for your production Kubernetes workloads. We are excited to partner together to demonstrate how quickly and easily users can deploy a Kubernetes cluster in IBM Cloud and then secure those workloads in this new and ever-changing container and microservice world.
 
-### About IBM Cloud
+## About IBM Cloud
 
 IBM Cloud provides users with a variety of compute choices as well as over 170 IBM and third party services. [IBM Cloud Container Service](https://www.ibm.com/cloud/kubernetes-service?cm_mmc=OSocial_Blog-_-Cloud_Cloud+Platform-_-WW_WW-_-NeuVector&cm_mmca1=000023UA&cm_mmca2=10002833&) combines Docker and Kubernetes to deliver powerful tools, an intuitive user experience, and built-in security and isolation to enable rapid delivery of applications all while leveraging Cloud Services including cognitive capabilities from Watson.
 
-### About NeuVector
+## About NeuVector
 
 [NeuVector](https://neuvector.com/) is cloud-native container firewall for monitoring and protecting Kubernetes container deployments in production. You can download a container firewall article  [here](https://blog.neuvector.com/article/how-to-deploy-a-docker-container-firewall) to learn about how a container firewall differs from traditional next generation firewalls (NGFW) and web application firewalls (WAF).  In addition to Layer 7 network firewall protection of Kubernetes pods, the NeuVector security solution provides features for auditing your security settings with Docker Bench and the Kubernetes CIS benchmark as well as scanning containers for vulnerabilities. NeuVector also monitors host and container processes for suspicious activity such as privilege escalations, port scanning, reverse shells and other unusual syscall activity.
 
 The NeuVector solution is comprised of security containers which can be deployed on each node just like you deploy your applications, using Kubernetes. For evaluation purposes, NeuVector makes available an Allinone container and an Enforcer container. These can be pulled from Docker Hub along with documentation by requesting access from info@neuvector.com.
 
-### Prerequisites
+## Prerequisites
 
 To complete this tutorial,  you will need the following environment:
 
@@ -31,19 +31,20 @@ To complete this tutorial,  you will need the following environment:
 
 * xxxx
 
-### Estimated Time
+## Estimated Time
 
 After the prerequistes are met, this tutorial should take you approximately 20 minutes to complete.
 
-### Steps
+## Steps
 
-1. Instantiate a Kubernetes cluster in IBM Cloud
-2. Deploy NeuVector onto the cluster
-3. Conclusion
+1. [Instantiate a Kubernetes cluster in IBM Cloud](instantiate-a-kubernetes-cluster-in-ibm-cloud)
+2. [Deploy NeuVector onto the cluster](deploy-neuvector-onto-the-cluster)
+3. [Generate test traffic by running sample applications](generate-test-traffic-by-running-sample-applications)
+3. [Conclusion](conclusion)
 
 
 
-1. Instantiate a Kubernetes cluster in IBM Cloud
+### Instantiate a Kubernetes cluster in IBM Cloud
 
 Log into your IBM Cloud account. Select **Kubernetes** on the left-hand navigation.
 
@@ -83,7 +84,7 @@ You can also create a cluster from the command line, use the following command:
 bx cs cluster-create -name -location -workers 2 -machine-type u1cx2x4 -hardware shared -public-vlan -private-vlan
 ``
 
-2. Deploy NeuVector onto the cluster
+### Deploy NeuVector onto the cluster
 
 Now that the environment is provisioned, you can access it from the IBM Cloud CLI. Download the CLI tool and login to your cluster following the instructions in the Access tab. Enter the following command:
 
@@ -155,6 +156,8 @@ kubectl get all -n neuvector
 You should see the following response
 
 <img src="./images/verifyAllinone.png" width="100%" height="100%" alt="Component Model"  class="inline"/>
+
+### Generate test traffic by running sample applications
 
 If you haven’t already deployed some sample applications, now is a good time to do that so that you’ll be able to see application containers running and their connections in NeuVector.
 
