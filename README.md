@@ -51,7 +51,7 @@ Log into your IBM Cloud account. Select **Kubernetes** on the left-hand navigati
 
 You will see the following screen presented:
 
-<img src="./images/kub-create.png" width="100%" height="100%" alt="Component Model"  class="inline"/>
+<img src="./images/kube-create.png" width="100%" height="100%" alt="Component Model"  class="inline"/>
 
 Select `Create a Cluster`
 
