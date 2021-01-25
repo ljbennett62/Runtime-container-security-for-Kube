@@ -37,14 +37,12 @@ After the prerequistes are met, this tutorial should take you approximately 20 m
 
 ## Steps
 
-1. [Instantiate a Kubernetes cluster in IBM Cloud](instantiate-a-kubernetes-cluster-in-ibm-cloud)
-2. [Deploy NeuVector onto the cluster](deploy-neuvector-onto-the-cluster)
-3. [Generate test traffic by running sample applications](generate-test-traffic-by-running-sample-applications)
-3. [Conclusion](conclusion)
+1. [Instantiate a Kubernetes cluster in IBM Cloud](#step-1-instantiate-a-kubernetes-cluster-in-ibm-cloud)
+2. [Deploy NeuVector onto the cluster](#step-2-deploy-neuvector-onto-the-cluster)
+3. [Generate test traffic by running sample applications](#step-3-generate-test-traffic-by-running-sample-applications)
 
 
-
-### Instantiate a Kubernetes cluster in IBM Cloud
+### Step 1. Instantiate a Kubernetes cluster in IBM Cloud
 
 Log into your IBM Cloud account. Select **Kubernetes** on the left-hand navigation.
 
@@ -84,7 +82,7 @@ You can also create a cluster from the command line, use the following command:
 bx cs cluster-create -name -location -workers 2 -machine-type u1cx2x4 -hardware shared -public-vlan -private-vlan
 ``
 
-### Deploy NeuVector onto the cluster
+### Step 2. Deploy NeuVector onto the cluster
 
 Now that the environment is provisioned, you can access it from the IBM Cloud CLI. Download the CLI tool and login to your cluster following the instructions in the Access tab. Enter the following command:
 
@@ -157,7 +155,7 @@ You should see the following response
 
 <img src="./images/verifyAllinone.png" width="100%" height="100%" alt="Component Model"  class="inline"/>
 
-### Generate test traffic by running sample applications
+### Step 3. Generate test traffic by running sample applications
 
 If you haven’t already deployed some sample applications, now is a good time to do that so that you’ll be able to see application containers running and their connections in NeuVector.
 
@@ -198,7 +196,7 @@ kubectl get svc/neuvector-manager-svc -n neuvector
 
 Feel free to browse the console, view Network Activity, the Policy Rules and other Resources.
 
-### Conclusion
+## Conclusion
 
 IBM Cloud Container Service makes it easy to set up a Kubernetes cluster to host your containerized applications. When running such applications in production, security is required to ensure that applications are safe and communicating properly. NeuVector provides that run-time security in any cloud environment, providing a layer-7 firewall, host and container processes monitoring, and vulnerability scanning solution.  You can request a demo and access to the download by contacting NeuVector at info@neuvector.com.
 
