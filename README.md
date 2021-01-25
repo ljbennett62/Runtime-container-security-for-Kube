@@ -39,8 +39,7 @@ After the prerequistes are met, this tutorial should take you approximately 20 m
 
 1. Instantiate a Kubernetes cluster in IBM Cloud
 2. Deploy NeuVector onto the cluster
-3. xxxx
-
+3. Conclusion
 
 
 
